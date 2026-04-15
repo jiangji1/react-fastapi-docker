@@ -1,8 +1,16 @@
 services:
   react:
-    build: .
-    dockerfile: DockerFile.react
+    build:
+      context: .
+      dockerfile: DockerFile.react
     ports:
-      - "3080:3080"
+      - "3080:80"
     # depends_on:
     #   - fastapiServer
+  fastapi:
+    build:
+      context: .
+      docckerfile: DockerFile.fastapi
+    ports:
+      - "3081:8000"
+      
