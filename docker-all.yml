@@ -10,7 +10,7 @@ services:
   fastapi:
     build:
       context: .
-      docckerfile: DockerFile.fastapi
+      dockerfile: DockerFile.fastapi
     ports:
       - "3081:8000"
       
