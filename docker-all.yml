@@ -1,0 +1,8 @@
+services:
+  react:
+    build: .
+    dockerfile: DockerFile.react
+    ports:
+      - "3080:3080"
+    # depends_on:
+    #   - fastapiServer
